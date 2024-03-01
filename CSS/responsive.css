@@ -1,0 +1,88 @@
+/* min width  */
+
+
+
+
+/* max width  */
+@media (max-width:992px) {
+    .game-box>div {
+        width: 89px;
+        height: 112px;
+    }
+}
+
+
+@media (max-width:768px) {
+    .game-box>div {
+        width: 66px;
+        height: 88px;
+    }
+}
+
+@media (max-width:576px) {
+    .Score-word {
+        font-size: 1rem !important;
+    }
+
+    .Duration-word {
+        font-size: 1rem !important;
+    }
+
+    #winner {
+        font-size: 1.5rem;
+    }
+
+    #play-again {
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width:426px) {
+
+    .game-box>div {
+        width: 59px;
+        height: 70px
+    }
+
+    .Score-word {
+        font-size: 0.8rem !important;
+    }
+
+    .Duration-word {
+        font-size: 0.8rem !important;
+    }
+
+    #winner {
+        font-size: 1.2rem !important;
+    }
+
+}
+
+@media (max-width:345px) {
+
+    .game-box>div {
+        width: 55px;
+        height: 60px;
+    }
+
+    .memo-card,
+    .memo-card>div {
+        border-radius: 5px;
+    }
+
+    .Score-word,
+    .Duration-word {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 0.8rem !important;
+    }
+
+    #winner {
+        font-size: 1rem !important;
+    }
+
+    #play-again {
+        font-size: 1rem !important;
+    }
+}

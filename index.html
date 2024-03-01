@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'
+        integrity='sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=='
+        crossorigin='anonymous' referrerpolicy='no-referrer' />
+
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link
+        href='https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Single+Day&display=swap'
+        rel='stylesheet'>
+
+</head>
+
+<body onload="createCardFunc()">
+    <div id="bg-blur"></div>
+    <div class="main container-fluid">
+        <div class="header container">
+            <h1 class="py-4 text-center fw-bold">
+                Memory Game <i class="fa-solid fa-brain"></i>
+            </h1>
+        </div>
+
+        <div class="game-container container mt-4 ">
+            <div class="game-header container d-flex align-items-center justify-content-between px-4">
+                <div id="player-1-id" class="py-3 text-white">
+                    <span class="Score-word fs-5 fw-bolder">Score : <span id="score-num-for-pl1">0</span>
+                    </span>
+                </div>
+
+                <div class="timer py-3 text-white">
+                    <span class="Duration-word fs-5 fw-bolder">
+                        Duration : <span id="Duration">00s</span>
+                    </span>
+                </div>
+
+                <div id="player-2-id" class="py-3 text-white">
+                    <span class="Score-word fs-5 fw-bolder">Score : <span id="score-num-for-pl2">0</span>
+                    </span>
+                </div>
+            </div>
+            <div class="game-box row position-relative">
+                <div
+                    class="game-over-area position-absolute d-flex align-items-center justify-content-center flex-column gap-3">
+                    <div class="fs-4 fw-bold">
+                        <span id="winner">Player 1</span>
+
+                    </div>
+
+                    <button id="play-again" class="btn py-2 px-sm-5 px-3 fs-4 fw-bold text-white">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="footer py-5 text-center">
+            <p class="m-0 text-white">
+                This Game is developed with <i class="fa-solid fa-heart"></i> by <a href="/"
+                    class="fw-bolder">Aditya</a>
+            </p>
+        </div>
+    </div>
+
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'
+        integrity='sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz'
+        crossorigin='anonymous'></script>
+
+    <script src="JS/app.js"></script>
+
+</body>
+
+</html>
