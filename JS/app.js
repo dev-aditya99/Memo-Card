@@ -153,14 +153,10 @@ const playGame = (elem) => {
         cardButton.parentNode.id
     )
 
-    console.log(getCardBoxId);
-
     if (clicked === false) {
         clicked = true;
 
     } else {
-        // cardButton.style.transform = "rotateY(0deg)";
-
         setTimeout(() => {
             ifMatch(cardButton);
         }, 1000)
@@ -185,7 +181,6 @@ const ifMatch = () => {
                     mD.children[i].style.transform = "rotateY(0deg)";
                     mD.children[i].disabled = true;
                     winBackScore++;
-                    console.log("Matched");
                 }
             }
 
@@ -210,8 +205,6 @@ const ifMatch = () => {
                 if (mD.id === getCardBoxId[i]) {
                     onWrongMatch.play();
                     mD.children[i].style.transform = "rotateY(180deg)";
-
-                    // cardButton.parentNode.children[i + 1].style.transform = "rotateY(180deg)";
                 }
             }
             cardButton.disabled = false;
@@ -229,7 +222,6 @@ const ifMatch = () => {
             }
 
             getCardBoxId = [];
-            console.log("Not Matched");
         }
     }
 
@@ -271,30 +263,6 @@ const displayGameOver = () => {
 
 
 playAgain.addEventListener("click", () => {
-    // gameOverDiv.style.opacity = "0";
-    // gameOverDiv.style.visibility = "hidden";
-    // gameOverDiv.style.zIndex = "-1";
-
-    // timer = 0;
-    // scoreX = 0;
-    // scoreY = 0;
-    // winBackScore = 0;
-    // scoreNumPl1.textContent = scoreX;
-    // scoreNumPl2.textContent = scoreY;
-
-    // timerFunc();
-
-    // for (let i = 1; i < cardBox.parentNode.children.length; i++) {
-    //     onRightMatch.play();
-    //     gameBox.children[i].children[0].style.transform = "rotateY(180deg) !important";
-    //     gameBox.children[i].children[0].disabled = false;
-    // }
-
-    // console.log(timer);
-    // console.log(scoreX);
-    // console.log(scoreY);
-    // console.log(winBackScore);
-
     document.location.reload();
 
 })
